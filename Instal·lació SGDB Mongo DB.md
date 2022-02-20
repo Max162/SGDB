@@ -1,6 +1,6 @@
 # Instal·lació SGDB MongoDB
 
-### Detectarem els possibles paquets per istal·lar
+###### Detectarem els possibles paquets per istal·lar
 ```
 sudo yum -y update
 ```

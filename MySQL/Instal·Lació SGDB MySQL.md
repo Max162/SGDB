@@ -48,6 +48,10 @@ firewall-cmd --reload
  <img src="https://user-images.githubusercontent.com/61474788/154858516-b31a782c-63bf-4f8c-8720-9fc928485e43.png">
 </p>
 
+
+<br />
+
+**Comprovació del seu funcionament creant una BD**
 <p align="center">
  <img src="https://user-images.githubusercontent.com/61474788/154858523-c57628b7-665a-4f6e-8a1a-0fdf46641024.png">
 </p>

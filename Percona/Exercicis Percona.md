@@ -98,7 +98,8 @@ El fitxer de configuraciño del SGDB de Percona es troba en la ruta /etc/my.cnf
 ```
 Els fitxers de dades, per defecte, es troben en la ruta /var/lib/mysql.
 
-Ho he sabut per dos raons, la primera es perquè en la documentació oficial de Precona ho indica. I la segona es perquè en l’arxiu que hem vist abans, en /etc/my.cnf hi ha un paràmetre que diu datadir (directori de les dades) que indica la ruta /var/lib/mysql.
+Ho he sabut per dos raons, la primera es perquè en la documentació oficial de Precona ho indica. I la segona es perquè en l’arxiu 
+que hem vist abans, en /etc/my.cnf hi ha un paràmetre que diu datadir (directori de les dades) que indica la ruta /var/lib/mysql.
 ```
 <p align="center">
  <img src="https://user-images.githubusercontent.com/61474788/154857720-8da5136b-126f-459b-a4af-90b450362259.png">

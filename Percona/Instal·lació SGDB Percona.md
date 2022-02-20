@@ -1,4 +1,4 @@
-# Instal·lació SGDB MongoDB
+# Instal·lació SGDB Percona
 
 **Detectarem els possibles paquets per instal·lar**
 ```
@@ -41,7 +41,7 @@ sudo service mysql status
 
 <br />
 
-**Afegirem el port 3306 al firewall i el reiniciarem**
+**Habilitarem el port 3306 al firewall i el reiniciarem**
 ```
 sudo firewall-cmd --zone=public --add-port=3306/tcp --permanent
 firewall-cmd --relaod

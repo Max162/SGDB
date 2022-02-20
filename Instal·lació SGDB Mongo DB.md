@@ -6,7 +6,7 @@ sudo yum -y update
 ```
 
 
-**Descarregarem el repositori del Percona**
+###### **Descarregarem el repositori del Percona**
 ```
 sudo yum install https://repo.percona.com/yum/percona-release-latest.noarch.rpm
 ```

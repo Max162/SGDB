@@ -1,4 +1,4 @@
-# Instal·lació SGDB Percona
+# Instal·lació SGDB MySQL
 
 **Detectarem el repositori del mysql**
 ```

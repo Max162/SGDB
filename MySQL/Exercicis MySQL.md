@@ -1,4 +1,4 @@
-# Exercicis SGDB Percona
+# Exercicis SGDB MySQL
 
 ## 1.	A on es troben físicament els fitxers de dades?
 ```

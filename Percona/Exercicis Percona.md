@@ -63,4 +63,92 @@ mysql> ALTER USER 'root'@'%' IDENTIFIED BY 'patata';
  <img src="https://user-images.githubusercontent.com/61474788/154857072-26f36b52-15b6-493e-abcc-45fda9675840.png">
 </p>
 
+<br />
+
+## 2.	Quines són les instruccions per arrancar / verificar status / apagar servei de la base de dades de Percona Server en el CentOS 7
+
+```
+Iniciar el servei:
+- sudo service mysql start
+
+Verificar el estat:
+- sudo service mysql status
+
+Parar el servei:
+- sudo service mysql stop
+
+```
+
+<br />
+
+## 3.	A on es troba i quin nom rep el fitxer de configuració del SGBD Percona Server?
+
+```
+El fitxer de configuraciño del SGDB de Percona es troba en la ruta /etc/my.cnf
+```
+<p align="center">
+ <img src="https://user-images.githubusercontent.com/61474788/154857662-8095b7c3-acd5-4049-8ecc-c9d382f4ee20.png">
+</p>
+
+<br />
+
+
+## 4.	A on es troben físicament els fitxers de dades (per defecte). Com ho has sabut?
+
+```
+Els fitxers de dades, per defecte, es troben en la ruta /var/lib/mysql.
+
+Ho he sabut per dos raons, la primera es perquè en la documentació oficial de Precona ho indica. I la segona es perquè en l’arxiu que hem vist abans, en /etc/my.cnf hi ha un paràmetre que diu datadir (directori de les dades) que indica la ruta /var/lib/mysql.
+```
+<p align="center">
+ <img src="https://user-images.githubusercontent.com/61474788/154857720-8da5136b-126f-459b-a4af-90b450362259.png">
+</p>
+
+<br />
+
+## 5.	Crea un usuari anomenat asix en el sistema operatiu i en SGBD de tal manera que aquest usuari del sistema operatiu no hagi d'introduir l'usuari i password cada vegada que cridem al client mysql?
+
+**Crearem l'usuari en la base de dades amb permís total**
+```
+mysql> CREATE USER 'asix'@'%' IDENTIFIED BY 'patata';
+mysql> GRANT AL PRIVILEGES ON *.* TO 'asix'@'%' WITH GRANT OPTION;
+```
+
+<br />
+
+**Crearem l'usuari en el sistema**
+```
+sudo useradd asix
+sudo passwd asix
+```
+
+<br />
+
+**Afegirem en l'arxiu my.cnf l'usuari asix i al seva caontrasenya**
+<p align="center">
+ <img src="https://user-images.githubusercontent.com/61474788/154857861-70cfbed2-ca18-4685-ae32-aa5bcb1a2aa0.png">
+</p>
+
+<br />
+
+**Comprovarem que podem entrar amb l'usuari recentment creat**
+<p align="center">
+ <img src="https://user-images.githubusercontent.com/61474788/154858090-1de4acb7-6ec2-40c7-b3fb-a84426aa1a98.png">
+</p>
+
+<br />
+
+
+## 6.	El servei de MySQL (mysqld) escolta al port 3306. Quina modificació/passos caldrien fer per canviar aquest port a 33306 per exemple?
+```
+Per modificar el port que escolta mysqld haurem d’afegir els paràmetres que veiem en la imatge en l’arxiu /etc/my.cnf
+```
+<p align="center">
+ <img src="https://user-images.githubusercontent.com/61474788/154858133-238da988-ba1e-4eaa-bbfc-7af5013d7ddb.png">
+</p>
+
+<br />
+
+
+
 

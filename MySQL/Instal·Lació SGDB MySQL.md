@@ -27,7 +27,7 @@ sudo systemctl start mysqld
 
 <br />
 
-**Comprovarem que esta funcionant**
+**Comprovarem que el servei està funcionant**
 ```
 sudo service mysql status
 ```

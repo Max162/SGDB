@@ -1,4 +1,4 @@
-# Instal·lació SGDB Percona
+# Instal·lació SGDB Mongo
 
 **Crearem un arxiu per al repositori**
 ```

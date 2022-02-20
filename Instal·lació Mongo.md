@@ -85,7 +85,7 @@ afegirem 0.0.0.0 per poder-nos connectar remotament al mongo.
  <img src="https://user-images.githubusercontent.com/61474788/154859693-4e1d21c3-22de-4386-8280-628c00179eb0.png">
 </p>
 
-**Comprovació**
+**Comprovació de la connexió**
 ```
 Com es pot observar, ja s'hauría connectat al mongo. A par de l’usuari root, he creat l’usuari max per comprovar el funcionament 
 del SGDB.

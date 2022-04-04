@@ -13,7 +13,7 @@ sudo sysemctl enable --now mysqld
 sudo grep "temporary password" /var/log/mysql.log
 ```
 <p align="center">
- <img src="https://user-images.githubusercontent.com/61474788/161563423-c485f5ee-3843-440d-a701-d79819bb6830.png">
+ <img src="https://user-images.githubusercontent.com/61474788/161563819-de8b5d0c-53e7-45aa-b84f-eb0fbbf79255.png">
 </p>
 
 <br />
